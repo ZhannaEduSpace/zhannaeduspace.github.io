@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting…</title>
+    <script>
+      (function() {
+        var newUrl = 'https://languageeduspace.com' +
+          window.location.pathname +
+          window.location.search +
+          window.location.hash;
+        window.location.replace(newUrl);
+      })();
+    </script>
+  </head>
+  <body>
+    <p>If you are not redirected automatically, go to
+      <a id="link" href="#">the new site</a>.
+    </p>
+    <script>
+      document.getElementById('link').href = 'https://languageeduspace.com' +
+        window.location.pathname +
+        window.location.search +
+        window.location.hash;
+    </script>
+  </body>
+</html>
